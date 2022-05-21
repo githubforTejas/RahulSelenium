@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="RegressionSuite" verbose="5" parallel="classes">
+
+<parameter name="username" value="admin"></parameter>
+<parameter name="password" value="manager"></parameter>
+
+<test name="ChromeTest">
+<parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="testng.CrossBrowser5"/>
+     <class name="testng.CrossBrowser6"/> 
+    </classes>
+</test>
+
+ <test name="FirefoxTest">
+<parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="testng.CrossBrowser5"/>
+      <class name="testng.CrossBrowser6"/>
+    </classes>
+</test>
+</suite> 
+<!--<suite name="RegressionSuite" verbose="5" parallel="tests" > 
+IN THE ABOVE CASE BOTH CHROME & FIREFOX PARALLELY LAUNCHED & BOTH WILL EXECUTE
+FIRST CROSSBROWSER 5 & AFTER QUITING THAT CLASS THEN AGAIN CROSSBROWSER 6 IS EXECUTED..
+
+<suite name="RegressionSuite" verbose="5" parallel="classes">
+IN THE ABOVE CASE EXECUTION HAPPENS SEQUENTIALLY FIRST CHROME LAUNCHES BOTH CLASSES IN
+PARALLELY THEN AFTER QUITING BOTH CLASSES FIREFOX LAUNCHES BOTH CLASSES PARALLELY
+
+<suite name="RegressionSuite" verbose="5" parallel="methods">
+IN THE ABOVE CASE EXECUTION HAPPENS SEQUENTIONALLY FIRST CHROME LAUNCHES ALL THE METHODS
+PRESENT IN BOTH THE CLASSES PARELLELY FOR EX IF WE HAVE 3 METHODS OR TESTCASES IN BOTH THE
+CLASSES THEN IT WILL LAUNCH TOTAL 6 BROWSERS AT A TIME & ALL METHODS STARTS EXECUTING
+PARALLELY AFTER QUITING ALL BROWSERS THEN FIREFOX BROWSER IS LAUNCHED WITH 6 BROWSERS 
+PARALLELY
+ -->
