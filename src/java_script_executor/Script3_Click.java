@@ -21,7 +21,7 @@ public class Script3_Click {
 		//STEP-2 DOWNCAST WEBDRIVER TO JAVASCRIPT
 		JavascriptExecutor jse = (JavascriptExecutor) driver;
 		//STEP-3 CALL executeScript() AND SUPPLY TARGET ELEMENT AS SECOND ARGUMENT
-		//STEP-4 USE THE TARGET WEBELEMENTWIT IN THE SCRIPT USING ARGUMENTS ARRAY VARIABLE & CALL click()
+		//STEP-4 USE THE TARGET WEBELEMENT WITH IN THE SCRIPT USING ARGUMENTS ARRAY VARIABLE & CALL click()
 		jse.executeScript("arguments[0].click();", loginButton);
 		driver.quit();
 	}

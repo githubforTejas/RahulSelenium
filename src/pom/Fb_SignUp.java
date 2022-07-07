@@ -18,6 +18,4 @@ public class Fb_SignUp {
 	public WebElement getFirstNameTextField() {
 		return firstNameTextField;
 	}
-	
-	
 }

@@ -9,6 +9,5 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="jars/selenium-server-4.1.2.jar"/>
 	<classpathentry kind="lib" path="jars/commons-io-2.11.0.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/3"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

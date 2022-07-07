@@ -20,7 +20,7 @@ public class DataProvdr {
 	public void loginTest(String userData) {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		driver.manage().window().maximize();	
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://demo.actitime.com/login.do");
 		
